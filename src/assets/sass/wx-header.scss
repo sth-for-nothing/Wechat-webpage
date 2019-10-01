@@ -1,0 +1,17 @@
+#wx-header {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 10px;
+    line-height: 45px;
+    font-size: 18px;
+    z-index: 500;
+}
+
+.hd-right>i::before {
+    content: "";
+    display: inline;
+    margin: 0 4px;
+}
+

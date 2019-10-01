@@ -1,0 +1,72 @@
+#chatWindow {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+#chatWindow section.chat-section {
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* 输入框 */
+#chatWindow footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-area {
+    height: 54px;
+    width: 100%;
+    padding: 8px;
+}
+
+.input-area::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.1);
+    transform-origin: 0 0;
+    transform: scaleY(0.5);
+}
+
+.right-btns, .left-btn {
+    position: relative;
+}
+
+#chatWindow footer i {
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right-btns i:last-child {
+    margin-left: 10px;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.chat-input input {
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 4px;
+    height: 38px;
+    width: 100%;
+    line-height: 45;
+}
+

@@ -1,0 +1,21 @@
+body {
+    background-color: #ededed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.weui-badge {
+    font-size: 11px !important;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+input{  
+    background:none;  
+    outline:none;  
+    border:none;
+}

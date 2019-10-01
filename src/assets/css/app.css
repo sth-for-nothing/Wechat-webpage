@@ -1,0 +1,40 @@
+#app {
+    height: 100%;
+    overflow: hidden;
+}
+
+#app .main-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 45px);
+    justify-content: space-between;
+}
+
+#app .main-container section {
+    flex: 1;
+    overflow: scroll;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+#app .main-container.hideLeft {
+    opacity: 0.75;
+    transform: translate3d(-100%, 0, 0);
+    transition: 1.2s;
+    overflow: hidden;
+}
+
+#app .main-container.showBack {
+    transition: 0.7s;
+    overflow: hidden;
+}
+
+#app .sub-page {
+    background-color: #ededed;
+    width: 100vw;
+    height: calc(100% - 45px);
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    z-index: 99;
+}
